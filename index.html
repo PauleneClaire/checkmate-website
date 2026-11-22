@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172c48">
+  <meta name="description" content="Checkmate — find your learning match. Share knowledge, learn skills, and grow together.">
+  <title>Checkmate — Learn. Connect. Grow.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Checkmate home"><span class="brand-mark">♟</span><span>checkmate<span class="brand-dot">.</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <button class="nav-link active" data-view="discover">Discover</button>
+      <button class="nav-link" data-view="how">How it works</button>
+      <button class="nav-link" data-view="plans">Membership</button>
+    </nav>
+    <div class="top-actions">
+      <button class="text-button" id="signInBtn">Sign in</button>
+      <button class="button button-dark button-small" id="joinTopBtn">Join free</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A COMMUNITY BUILT AROUND CURIOSITY</div>
+        <h1>Find your match.<br><span>Master something new.</span></h1>
+        <p class="hero-lede">Meet people who share what you love, teach what you know, and help you discover what’s next.</p>
+        <div class="hero-actions">
+          <button class="button button-gold" id="heroJoinBtn">Find my learning match <span>↗</span></button>
+          <button class="button button-quiet" data-scroll="howSection">See how it works</button>
+        </div>
+        <div class="hero-proof"><div class="avatar-stack"><i>🌍</i><i>📚</i><i>🎨</i><i>♟</i></div><span>A more human way to learn together</span></div>
+      </div>
+      <div class="hero-art" aria-label="Learning topics illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-card card-language"><span class="float-icon lavender">文</span><span><b>Languages</b><small>Say hello to new worlds</small></span></div>
+        <div class="floating-card card-science"><span class="float-icon mint">✳</span><span><b>Science & ideas</b><small>Stay curious</small></span></div>
+        <div class="floating-card card-art"><span class="float-icon peach">✎</span><span><b>Creative hobbies</b><small>Make something together</small></span></div>
+        <div class="center-orb"><span>♟</span><small>LEARN<br>TOGETHER</small></div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span class="trust-icon">◎</span><span><b>Interest-led</b><small>Connect through curiosity</small></span></div>
+      <div><span class="trust-icon">↔</span><span><b>Give & learn</b><small>Knowledge goes both ways</small></span></div>
+      <div><span class="trust-icon">⌂</span><span><b>Community-minded</b><small>Learning feels less lonely</small></span></div>
+    </section>
+
+    <section class="section discover-section" id="discoverSection">
+      <div class="section-heading">
+        <div><div class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</div><h2>Explore learning interests</h2><p>Discover the subjects and skills that bring people together.</p></div>
+        <button class="button button-outline" id="browseAllBtn">Explore all topics <span>→</span></button>
+      </div>
+      <div class="category-grid">
+        <button class="category-card cat-language" data-category="Languages"><span class="category-symbol">文</span><span><b>Languages</b><small>Practice a new language</small></span><span class="category-arrow">↗</span></button>
+        <button class="category-card cat-academic" data-category="Academics"><span class="category-symbol">∑</span><span><b>Academics</b><small>Explore ideas together</small></span><span class="category-arrow">↗</span></button>
+        <button class="category-card cat-hobby" data-category="Hobbies"><span class="category-symbol">✳</span><span><b>Hobbies & skills</b><small>Build something you love</small></span><span class="category-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section how-section" id="howSection">
+      <div class="section-heading centered"><div class="eyebrow">SIMPLE BY DESIGN</div><h2>Learning is better together.</h2><p>From first hello to your next breakthrough, make every connection count.</p></div>
+      <div class="steps-grid">
+        <article class="step"><div class="step-number">01</div><div class="step-icon">☻</div><h3>Show what you're curious about</h3><p>Create a profile with the skills you have, the things you want to learn, and what inspires you.</p></article>
+        <article class="step"><div class="step-number">02</div><div class="step-icon">⌕</div><h3>Find your learning people</h3><p>Explore shared interests and complementary skills in an age-appropriate community.</p></article>
+        <article class="step"><div class="step-number">03</div><div class="step-icon">✦</div><h3>Share, practice, and grow</h3><p>Exchange knowledge, join activities, and celebrate the progress you make together.</p></article>
+      </div>
+    </section>
+
+    <section class="membership-section" id="plansSection">
+      <div class="membership-copy"><div class="eyebrow">ROOM TO GROW</div><h2>Start free.<br>Go further when you're ready.</h2><p>Build your learning community at your own pace. Upgrade for more ways to discover, organize, and reflect on your learning.</p><div class="membership-note">Safety tools and basic community protections stay free for everyone.</div></div>
+      <div class="plan-preview">
+        <div class="mini-plan"><div class="plan-top"><b>Free</b><span class="plan-tag">GET STARTED</span></div><div class="plan-price">₱0 <small>/ forever</small></div><p>Build your profile and explore the community.</p><ul><li>Learning profile</li><li>Basic discovery</li><li>Community activities</li></ul></div>
+        <div class="mini-plan featured-plan"><div class="plan-top"><b>Plus</b><span class="plan-tag gold-tag">POPULAR</span></div><div class="plan-price">₱149 <small>/ month</small></div><p>More ways to connect and track your growth.</p><ul><li>Advanced discovery</li><li>Apply for verification*</li><li>Learning reports</li></ul></div>
+        <div class="mini-plan"><div class="plan-top"><b>Premium</b><span class="plan-tag">MORE TOOLS</span></div><div class="plan-price">₱299 <small>/ month</small></div><p>Extra support for your learning journey.</p><ul><li>Everything in Plus</li><li>AI study assistant</li><li>Personalized study plans</li></ul></div>
+        <small class="plan-disclaimer">*Verification is subject to separate identity and eligibility checks. Payment alone does not grant a badge. Prices are proposed and not yet connected to billing.</small>
+      </div>
+    </section>
+
+    <section class="safety-section">
+      <div class="safety-icon">♡</div><div><div class="eyebrow">LEARNING SHOULD FEEL SAFE</div><h2>A thoughtful space for every age.</h2><p>Checkmate is designed with age-appropriate experiences in mind. Junior accounts require parent or guardian involvement and stay in separate, supervised learning spaces. Adult communities are separate.</p></div>
+    </section>
+
+    <section class="final-cta"><div class="eyebrow">YOUR MOVE</div><h2>Make curiosity your next connection.</h2><p>Join a community where everyone has something to teach and something to learn.</p><button class="button button-gold" id="bottomJoinBtn">Create a free profile <span>↗</span></button></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">♟</span><span>checkmate<span class="brand-dot">.</span></span></a><span>Learn. Connect. Grow.</span><span>© <span id="year"></span> Checkmate</span></footer>
+
+  <dialog id="joinDialog" class="modal">
+    <form method="dialog" class="modal-close-row"><button class="close-button" aria-label="Close">×</button></form>
+    <div class="modal-content">
+      <div class="modal-kicker">YOUR CHECKMATE JOURNEY</div><h2>Create your learner profile</h2><p class="modal-sub">This is a front-end preview. It won't create a real account or collect identity documents.</p>
+      <form id="profileForm">
+        <label for="displayName">What should we call you?</label><input id="displayName" name="displayName" placeholder="Your name" required maxlength="60">
+        <label for="learningGoal">What would you like to explore?</label><select id="learningGoal" name="learningGoal"><option>Languages</option><option>Academics</option><option>Hobbies & skills</option><option>A little bit of everything</option></select>
+        <label for="accountSpace">Choose your account space</label><select id="accountSpace" name="accountSpace"><option value="adult">Adult community (18+)</option><option value="junior">Junior community (parent/guardian setup required)</option></select>
+        <div class="form-safety" id="juniorNote" hidden>Junior accounts require a parent or guardian to complete registration and consent. Junior members will not be discoverable by adult accounts.</div>
+        <button class="button button-dark full-button" type="submit">Preview my profile <span>→</span></button>
+      </form>
+      <div class="form-result" id="formResult" hidden></div>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

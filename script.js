@@ -1,7 +1,9 @@
 const dialog=document.getElementById("joinDialog");
 const toast=document.getElementById("toast");
 const openJoin=()=>{document.getElementById("formResult").hidden=true;dialog.showModal()};
-["joinTopBtn","heroJoinBtn","bottomJoinBtn","signInBtn"].forEach(id=>document.getElementById(id).addEventListener("click",openJoin));
+["joinTopBtn","heroJoinBtn","bottomJoinBtn"].forEach(id=>document.getElementById(id).addEventListener("click",openJoin));
+
+["studentSignInBtn","tutorSignInBtn"].forEach(id=>document.getElementById(id).addEventListener("click",()=>{showToast("Sign-in for this account type will be available soon.");}));
 document.querySelectorAll("[data-view]").forEach(btn=>btn.addEventListener("click",()=>{const target=btn.dataset.view==="plans"?"plansSection":btn.dataset.view==="how"?"howSection":"discoverSection";document.getElementById(target).scrollIntoView({behavior:"smooth"});document.querySelectorAll(".nav-link").forEach(n=>n.classList.toggle("active",n===btn))}));
 document.querySelectorAll("[data-scroll]").forEach(btn=>btn.addEventListener("click",()=>document.getElementById(btn.dataset.scroll).scrollIntoView({behavior:"smooth"})));
 document.querySelectorAll("[data-category]").forEach(btn=>btn.addEventListener("click",()=>{showToast("Topic selected: "+btn.dataset.category+". Learner discovery will be available after account setup.");document.getElementById("discoverSection").scrollIntoView({behavior:"smooth"})}));
